@@ -77,43 +77,49 @@
         </div>
     </section>
 
-    <!-- Что входит -->
-    <section class="section offer" id="offer">
-        <div class="container">
-            <h2 class="section-title">Что входит в фотосессию</h2>
-            <div class="offer-grid">
-                <div class="offer-card">
-                    <div class="offer-icon">
-                        <i class="fas fa-camera"></i>
-                    </div>
-                    <h3>1,5 часа съёмки</h3>
-                    <p>В лучшем парке города в утреннее или вечернее время</p>
+<!-- Что входит -->
+<section class="section offer" id="offer">
+    <div class="container">
+        <h2 class="section-title">Что входит в фотосессию</h2>
+        <div class="offer-grid">
+            <div class="offer-card" data-offer-details="Съёмка проводится в утренние (с 7:00 до 10:00) или вечерние (с 17:00 до 20:00) часы, когда свет наиболее мягкий и подходящий для портретной фотографии. Мы выберем самый живописный парк в вашем городе.">
+                <div class="offer-icon">
+                    <i class="fas fa-camera"></i>
                 </div>
-                <div class="offer-card">
-                    <div class="offer-icon">
-                        <i class="fas fa-images"></i>
-                    </div>
-                    <h3>30 обработанных фото</h3>
-                    <p>В авторском стиле с цветокоррекцией и базовой ретушью</p>
+                <h3>1,5 часа съёмки</h3>
+                <p>В лучшем парке города в утреннее или вечернее время</p>
+                <button class="offer-details-btn">Подробнее</button>
+            </div>
+            
+            <div class="offer-card" data-offer-details="Вы получите 30 профессионально обработанных фотографий в моём авторском стиле. Каждая фотография проходит цветокоррекцию, базовую ретушь кожи и тонирование для создания единого визуального стиля.">
+                <div class="offer-icon">
+                    <i class="fas fa-images"></i>
                 </div>
-                <div class="offer-card">
-                    <div class="offer-icon">
-                        <i class="fas fa-magic"></i>
-                    </div>
-                    <h3>5 фото премиум-класса</h3>
-                    <p>С глубокой художественной ретушью для соцсетей</p>
+                <h3>30 обработанных фото</h3>
+                <p>В авторском стиле с цветокоррекцией и базовой ретушью</p>
+                <button class="offer-details-btn">Подробнее</button>
+            </div>
+            
+            <div class="offer-card" data-offer-details="5 лучших фотографий проходят углублённую художественную ретушь: работа со светом и тенью, удаление мелких недостатков, художественная обработка для идеального вида в социальных сетях. Эти фото станут жемчужинами вашего портфолио.">
+                <div class="offer-icon">
+                    <i class="fas fa-magic"></i>
                 </div>
-                <div class="offer-card">
-                    <div class="offer-icon">
-                        <i class="fas fa-shipping-fast"></i>
-                    </div>
-                    <h3>Готовность за 5 дней</h3>
-                    <p>Все фотографии будут готовы через 5 рабочих дней</p>
+                <h3>5 фото премиум-класса</h3>
+                <p>С глубокой художественной ретушью для соцсетей</p>
+                <button class="offer-details-btn">Подробнее</button>
+            </div>
+            
+            <div class="offer-card" data-offer-details="Все фотографии будут готовы через 5 рабочих дней после съёмки. Вы получите их в высоком качестве через файлообменник или лично на флеш-накопителе. При необходимости возможен срочный заказ за дополнительную плату.">
+                <div class="offer-icon">
+                    <i class="fas fa-shipping-fast"></i>
                 </div>
+                <h3>Готовность за 5 дней</h3>
+                <p>Все фотографии будут готовы через 5 рабочих дней</p>
+                <button class="offer-details-btn">Подробнее</button>
             </div>
         </div>
-    </section>
-
+    </div>
+</section>
     <!-- Галерея -->
     <section class="section portfolio" id="portfolio">
         <div class="container">
@@ -208,6 +214,7 @@
         <textarea id="message" name="message" rows="4" placeholder="Расскажите о ваших идеях..."></textarea>
     </div>
     <button type="submit" class="btn btn-primary btn-block">Отправить заявку</button>
+<form action="https://formspree.io/f/maqdywgw" method="POST" class="booking-form" id="bookingForm">
 </form>
             </div>
         </div>

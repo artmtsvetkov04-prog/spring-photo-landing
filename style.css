@@ -684,3 +684,160 @@ body {
         grid-template-columns: 1fr;
     }
 }
+/* ===== ДОПОЛНИТЕЛЬНЫЕ СТИЛИ ДЛЯ УЛУЧШЕНИЙ UX ===== */
+
+/* Стили для кнопок подробностей */
+.offer-details-btn {
+    margin-top: 15px;
+    padding: 8px 20px;
+    background: transparent;
+    border: 2px solid var(--primary-green);
+    color: var(--primary-green);
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 0.9rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.offer-details-btn:hover {
+    background: var(--primary-green);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Модальное окно для подробностей */
+.offer-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2001;
+    align-items: center;
+    justify-content: center;
+}
+
+.offer-modal-content {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 500px;
+    width: 90%;
+    text-align: left;
+    position: relative;
+}
+
+.offer-modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--medium-gray);
+}
+.offer-modal h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: var(--primary-green);
+}
+
+.offer-modal p {
+    color: var(--medium-gray);
+    line-height: 1.6;
+}
+
+/* Улучшенная адаптивность для очень маленьких экранов */
+@media (max-width: 360px) {
+    .hero-title {
+        font-size: 1.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .gallery-item {
+        height: 150px;
+    }
+}
+
+/* Плавная анимация для появления элементов */
+.offer-card, .step, .gallery-item {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Задержки для анимации */
+.offer-card:nth-child(1) { animation-delay: 0.1s; }
+.offer-card:nth-child(2) { animation-delay: 0.2s; }
+.offer-card:nth-child(3) { animation-delay: 0.3s; }
+.offer-card:nth-child(4) { animation-delay: 0.4s; }
+
+/* Улучшение читаемости на мобильных */
+@media (max-width: 768px) {
+    .offer-details-btn {
+        padding: 6px 15px;
+        font-size: 0.8rem;
+    }
+    
+    .offer-modal-content {
+        padding: 25px 20px;
+    }
+}
+/* Добавьте это в конец файла */
+.offer-modal h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: var(--primary-green);
+}
+
+.offer-modal p {
+    color: var(--medium-gray);
+    line-height: 1.6;
+}
+
+/* Отключаем анимацию появления, так как она конфликтует с IntersectionObserver */
+/* ЗАКОММЕНТИРУЙТЕ или УДАЛИТЕ этот блок: */
+/*
+.offer-card, .step, .gallery-item {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.offer-card:nth-child(1) { animation-delay: 0.1s; }
+.offer-card:nth-child(2) { animation-delay: 0.2s; }
+.offer-card:nth-child(3) { animation-delay: 0.3s; }
+.offer-card:nth-child(4) { animation-delay: 0.4s; }
+*/
